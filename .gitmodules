@@ -1,6 +1,3 @@
-[submodule "GuitarChordLearner/Assets/GameTools"]
-	path = GuitarChordLearner/Assets/GameTools
-	url = https://github.com/J-Mitty12/GameTools
 [submodule "ChordGame/Assets/GameTools"]
 	path = ChordGame/Assets/GameTools
 	url = https://github.com/J-Mitty12/GameTools
