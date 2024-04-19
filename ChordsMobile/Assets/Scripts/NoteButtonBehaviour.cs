@@ -10,10 +10,15 @@ public class NoteButtonBehaviour : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(OnButtonClick);
     }
-
     void OnButtonClick()
     {
-        Debug.Log("Clicked on note: " + noteData.noteID);
-        noteChecker.HandleNoteButtonClick(noteData);
+        if (noteChecker == null)
+        {
+            Debug.LogError("Object comparer is not assigned!");
+            return;
+        }
+
+        noteChecker.SelectedNoteA(noteData);
+        Debug.Log("selected");
     }
 }

@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class NoteHandlerBehaviour : MonoBehaviour
 {
-    public NoteSO correctNoteData;
+    private NoteSO selectedNoteA;
+    private NoteSO selectedNoteB;
 
-    public void HandleNoteButtonClick(NoteSO clickedNoteData)
+    public void SelectedNoteA(NoteSO obj)
     {
-        if (clickedNoteData == correctNoteData)
-        {
-            Debug.Log("Correct!");
-        }
-        else
-        {
-            Debug.Log("Incorrect!");
-        }
+        selectedNoteA = obj;
+    }
+
+    public void SelectedNoteB(NoteSO obj)
+    {
+        selectedNoteB = obj;
     }
     
+
 }

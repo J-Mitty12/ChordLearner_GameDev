@@ -1,8 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewNote", menuName = "Note")]
+[CreateAssetMenu]
 public class NoteSO : ScriptableObject
 {
-    public int noteID;
-    public AudioClip sound;
+    
 }
